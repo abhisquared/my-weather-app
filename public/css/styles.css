@@ -7,9 +7,33 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-image: linear-gradient(to top, #AAAAAA, white);
 
 }
+.subbut{
+  cursor: pointer;
+  background-color: #111111;
+  color: white;
+  font-size: 17px;
+}
+/* .subbut:hover {
+  background-color: grey;
+  color: white;
+} */
 
+.subbut:active {
+  background-color: black;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+.inputarea{
+  font-size: 17px;
+  border-radius: 1px;
+}
+.output{
+  font-weight: bold;
+  font-size: 17px;
+}
 footer{
   color: #444444;
   border-top: 1px solid;
