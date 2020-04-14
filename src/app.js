@@ -4,6 +4,8 @@ const hbs=require("hbs")
 const weather=require("./getTemp.js")
 
 const app=express()
+
+const port=process.env.PORT || 3000
 const pathToPublic=path.join(__dirname,"../public")
 const pathToPartials=path.join(__dirname,"../partials")
 app.use(express.static(pathToPublic))
@@ -49,6 +51,6 @@ app.get("*",(req,res)=>{
     errorMessage: "Nikal Lavde!"
   })
 })
-app.listen(3000,()=>{
-  console.log("Listening to port 3000")
+app.listen(port,()=>{
+  console.log("Listening to port"+port)
 })
