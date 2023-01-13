@@ -5,3 +5,7 @@ nav:
 
 plugins:
   - techdocs-core
+
+extra:
+  version:
+    provider: mike
