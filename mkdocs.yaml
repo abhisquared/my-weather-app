@@ -1,5 +1,5 @@
 site_name: 'Weather-docs'
-docs_dir: "."
+docs_dir: "src/"
 nav:
   - Home: index.md
 
